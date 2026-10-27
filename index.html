@@ -14,6 +14,7 @@ header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0
 .booking-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;align-items:start}.booking-info{background:var(--green);color:#fff;padding:24px;border-radius:18px}.booking-info h3{margin-top:0}.booking-info p{color:#e1eee5}.booking-info ul{padding-right:20px}.form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:700;font-size:.9rem}.field input,.field select,.field textarea{width:100%;border:1px solid #ccd8ce;border-radius:10px;padding:11px 12px;background:#fff;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #176b4518}.field textarea{min-height:88px;resize:vertical}.summary{background:var(--soft);border:1px solid #d6e7d9;border-radius:12px;padding:14px;margin:16px 0}.summary-row{display:flex;justify-content:space-between;gap:12px}.summary-total{font-size:1.15rem;font-weight:800;color:var(--green);border-top:1px solid #c9ddce;padding-top:8px;margin-top:8px}.form-card .btn{width:100%;background:#1f9c5a;color:#fff}.small{font-size:.8rem;color:var(--muted);margin:10px 0 0}.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq article{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px}.faq h3{margin:0 0 6px;font-size:1rem}.faq p{margin:0;color:var(--muted);font-size:.9rem}footer{background:#102f20;color:#e5efe8;padding:24px 0;text-align:center}footer p{margin:4px 0;color:#c4d8ca;font-size:.9rem}.wa-float{position:fixed;bottom:18px;left:18px;background:#1eae61;color:#fff;border-radius:50px;padding:12px 16px;font-weight:800;box-shadow:0 5px 20px #0002;z-index:20}
 @media(max-width:850px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.booking-wrap{grid-template-columns:1fr}}
 @media(max-width:560px){.nav{padding:10px 0}.brand{font-size:1rem}.nav a.cta{padding:7px 10px}.hero{padding:42px 0}.cards,.faq{grid-template-columns:1fr}.section{padding:32px 0}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.card,.form-card{padding:17px}.card-image{width:calc(100% + 34px);margin:-17px -17px 14px;height:155px}.wa-float{bottom:12px;left:12px;font-size:.9rem}}
+.privacy-consent{display:flex;align-items:flex-start;gap:9px;margin:14px 0 8px;font-size:.84rem;color:var(--muted)}.privacy-consent input{margin-top:6px;accent-color:var(--green);flex:0 0 auto}
 .brand{display:flex;align-items:center;gap:11px;color:#174b34;font-size:1.18rem;line-height:1.25}.brand-copy{display:block;font-weight:800}.brand small{display:block;color:#63766a;font-weight:500;font-size:.74rem;margin-top:3px}.brand-mark{position:relative;isolation:isolate;display:grid;place-items:center;flex:0 0 auto;width:50px;height:50px;border:1px solid #d7ad5380;border-radius:16px;background:linear-gradient(145deg,#145436,#0c3925);box-shadow:inset 0 0 0 4px #ffffff08,0 4px 15px #0b2b1d22;overflow:hidden}.brand-mark:after{content:"";position:absolute;z-index:2;inset:-40% auto -40% -65%;width:40%;transform:rotate(25deg);background:linear-gradient(90deg,transparent,#fff6d466,transparent);animation:gold-glint 6s ease-in-out infinite}.brand-mark svg{width:35px;height:35px;fill:none;stroke:#e4c16c;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.brand-mark .crescent{fill:#e4c16c;stroke:none}.brand-mark .spires{stroke-width:1.4}.hero{background-image:linear-gradient(120deg,rgba(7,42,27,.88),rgba(19,91,57,.78)),url("https://commons.wikimedia.org/wiki/Special:FilePath/Masjid%20Al%20Haram.%20Mecca%2C%20Saudi%20Arabia.jpg?width=1800");background-position:center 46%;background-size:cover}.hero-brand{display:flex;align-items:center;gap:14px;margin:0 0 18px;color:#fff}.hero-brand .brand-mark{width:64px;height:64px;border-radius:20px;background:#0f4b31b8;border-color:#dfbd6b}.hero-brand .brand-mark svg{width:45px;height:45px}.hero-brand b{display:block;color:#f0d58b;font-size:1.35rem}.hero-brand small{display:block;color:#e0eadf;font-size:.83rem;margin-top:2px}.hero .eyebrow{color:#f2d78e}.hero .btn-primary{background:linear-gradient(135deg,#ebcc7b,#cfa348);box-shadow:0 7px 20px #091b1270}.card{transition:transform .2s ease,box-shadow .2s ease}.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px #163d221c}.card-image{background:linear-gradient(135deg,#dce8dd,#a8c1aa)}@keyframes gold-glint{0%,75%,100%{left:-65%}86%{left:125%}}@media(max-width:560px){.brand-mark{width:44px;height:44px;border-radius:14px}.brand-mark svg{width:31px;height:31px}.brand{font-size:1rem}.hero-brand{margin-bottom:14px}.hero-brand .brand-mark{width:55px;height:55px}.hero-brand b{font-size:1.18rem}}@media(prefers-reduced-motion:reduce){.brand-mark:after{animation:none}.card{transition:none}.card:hover{transform:none}}
 </style>
 </head>
@@ -91,8 +92,9 @@ header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0
           <div class="summary-row"><span>عدد الأشخاص</span><strong id="peopleShown">1</strong></div>
           <div class="summary-row summary-total"><span>الإجمالي التقديري</span><strong id="totalPrice">—</strong></div>
         </div>
+        <label class="privacy-consent"><input id="privacyConsent" type="checkbox" required><span>أوافق على حفظ بياناتي في سجل طلبات رفيق الحرم للتواصل بشأن الحجز.</span></label>
         <button class="btn" type="submit">إرسال طلب الحجز عبر واتساب</button>
-        <p class="small">سيتم فتح واتساب برسالة جاهزة. راجع الرسالة واضغط إرسال داخل واتساب لإتمام الطلب. هذا النموذج لا يحفظ البيانات في قاعدة بيانات.</p>
+        <p class="small">سيُحفظ طلبك في سجل الحجوزات الخاص عبر Google Forms، ثم تُفتح رسالة واتساب. راجع الرسالة واضغط إرسال داخل واتساب لإكمال الطلب.</p>
       </form>
     </div>
   </div>
@@ -191,7 +193,32 @@ document.getElementById("bookingForm").addEventListener("submit",e=>{
  notes?`ملاحظات: ${notes}`:"",
  "أرجو تأكيد التوفر والحجز. أعلم أن الطلب لا يُعد مؤكدًا إلا بعد رد الإدارة."
  ].filter(Boolean).join("\n");
- window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,"_blank","noopener");
+ const hiddenTarget="rafiqGoogleFormSink";
+ let sink=document.getElementById(hiddenTarget);
+ if(!sink){sink=document.createElement("iframe");sink.id=hiddenTarget;sink.name=hiddenTarget;sink.title="إرسال طلب الحجز إلى سجل الطلبات";sink.hidden=true;document.body.appendChild(sink);}
+ const post=document.createElement("form");
+ post.method="POST";
+ post.action="https://docs.google.com/forms/d/e/1FAIpQLSeLfh_F3ZyQqbYBZVUVPD-m68-Yj3oav4ydXDRggTL39EbFSg/formResponse";
+ post.target=hiddenTarget;
+ post.hidden=true;
+ const fields={
+  "entry.599968025":name,
+  "entry.1524445752":countryName,
+  "entry.1965635001":"+"+internationalPhone,
+  "entry.1232008893":"+"+internationalWhatsapp,
+  "entry.260514637":trip.name,
+  "entry.2083198809":option[0],
+  "entry.1346093985":String(people),
+  "entry.1975918280":String(option[1]),
+  "entry.2036355223":String(total),
+  "entry.668949485":notes
+ };
+ Object.entries(fields).forEach(([name,value])=>{const input=document.createElement("input");input.type="hidden";input.name=name;input.value=value;post.appendChild(input);});
+ document.body.appendChild(post);
+ post.submit();
+ post.remove();
+ const waUrl=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+ window.open(waUrl,"_blank","noopener");
 });
 </script>
 </body>
